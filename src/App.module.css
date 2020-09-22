@@ -1,0 +1,38 @@
+.app {
+  height: 100vh;
+  background-image: url(https://wallpaperaccess.com/full/2629319.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+  background-image: url(https://i.imgur.com/GhQZhaO.jpg);
+  background-size: cover;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  padding: 94px 72px;
+
+  color: white;
+}
+
+.weather {
+  background: white;
+  border-radius: 32px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+.bottom {
+  display: flex;
+}
+
+.divider {
+  color: aqua;
+  margin: 100px 0;
+
+  width: 2px;
+  background-color: rgba(125, 125, 125, 0.3);
+}

@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import styles from './App.module.css';
+import Current from './components/Current';
+import Forecast from './components/Forecast';
+import Search from './components/Search';
+import OtherCities from './components/OtherCities';
+import axios from 'axios';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className={styles.app}>
+        <div className={styles.weather}>
+          <div className={styles.top}>
+            <Current />
+          </div>
+          <div className={styles.bottom}>
+            <Forecast />
+            <div className={styles.divider}></div>
+            <OtherCities />
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;

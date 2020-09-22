@@ -1,0 +1,14 @@
+.search {
+  margin: 20px 0;
+  margin-left: 420px;
+}
+
+.locationInput {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  margin-left: 10px;
+  color: black;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,13 @@
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.day {
+  color: rgba(0, 0, 0, 0.7);
+}
+.temperature {
+  color: rgba(0, 0, 0, 0.5);
+}
