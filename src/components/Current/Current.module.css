@@ -1,6 +1,15 @@
 .current {
+  display: flex;
+  padding: 40px 0;
+  flex-direction: row;
+  background-image: url(https://i.imgur.com/GhQZhaO.jpg);
+  background-size: cover;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  color: white;
+  position: relative;
 }
-.top {
+/* .top {
   display: flex;
 }
 .weatherDisplay {
@@ -8,39 +17,43 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+} */
+
+.left {
+  padding: 0 120px;
+}
+
+.right {
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1.5rem;
 }
 
 .temperature {
-  display: flex;
-  align-items: center;
+  margin-top: 3rem;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .weather {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.2rem;
   letter-spacing: 5px;
   margin-top: 0.25rem;
-  margin-left: 30px;
-}
-
-.location {
-  font-weight: 500;
-  font-size: 1.6rem;
-}
-.location::after {
-  content: ' ';
-  display: block;
-  margin-top: 0.8rem;
-  background: #fff;
-  width: 50%;
-  height: 3px;
-  transform: translateX(50%);
 }
 
 .metas {
   margin-top: 3rem;
+  margin-bottom: 1.5rem;
   display: flex;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -53,7 +66,70 @@
   margin-left: 32px;
 }
 
+.location {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.location::after {
+  content: '';
+  display: block;
+  margin-top: 0.5rem;
+  height: 1px;
+  background: white;
+  border-radius: 2px;
+  width: 50%;
+  transform: translateX(50%);
+}
+
 .divider {
   width: 2px;
   background-color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width: 1024px) {
+  .current {
+    flex-direction: column;
+    padding: 64px 0;
+  }
+
+  .left {
+    padding: 0 96px;
+  }
+
+  .right {
+    padding: 0 96px;
+    flex: 1;
+    order: 1;
+    justify-content: flex-end;
+  }
+
+  .location {
+    margin-top: 16px;
+    font-weight: 500;
+  }
+
+  .location::after {
+    content: '';
+    display: none;
+
+    background: white;
+    border-radius: 2px;
+    width: 50%;
+    transform: translateX(50%);
+    margin-top: 1rem;
+    height: 3px;
+  }
+
+  .temperature {
+    margin: 0;
+    text-align: center;
+    font-size: 5rem;
+  }
+  .metas {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+  }
 }

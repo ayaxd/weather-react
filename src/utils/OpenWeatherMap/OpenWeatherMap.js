@@ -6,7 +6,7 @@ const getWeather = (url, params) =>
   axios.get(`${baseURL}${url}`, {
     params: {
       ...params,
-      appid: 'f8cc51f625874e614eec6716d2eebbd8',
+      appid: '185ba5dc428fd725af70265bbeed01d1',
       units: 'metric',
     },
   });

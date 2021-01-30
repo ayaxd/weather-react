@@ -55,16 +55,17 @@ class OtherCities extends Component {
         {loading ? (
           <div>loading...</div>
         ) : (
-          <div>
+          <div className={styles.cities}>
             {data.list.map((item) => (
               <City
                 key={item.id}
-                name={item.name}
-                temperature={parseInt(item.main.temp)}
-                weather={{
-                  icon: item.weather[0].icon,
-                  description: item.weather[0].main,
-                }}
+                city={item}
+                // name={item.name}
+                // temperature={parseInt(item.main.temp)}
+                // weather={{
+                //   icon: item.weather[0].icon,
+                //   description: item.weather[0].main,
+                // }}
               />
             ))}
           </div>

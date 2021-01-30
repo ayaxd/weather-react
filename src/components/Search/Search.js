@@ -15,8 +15,8 @@ class Search extends Component {
 
   changeWeatherHandler = (e) => {
     e.preventDefault();
-    // this.props.changeForecast(this.state.inputLocation);
-    this.props.changeWeather(this.state.inputLocation);
+
+    this.props.changeCoords(this.state.inputLocation);
 
     this.setState({ inputLocation: '' });
   };
@@ -25,10 +25,10 @@ class Search extends Component {
     return (
       <div className={styles.search}>
         <form className={styles.location} onSubmit={this.changeWeatherHandler}>
-          <i className="fas fa-search"></i>
+          <i className='fas fa-search'></i>
           <input
             className={styles.locationInput}
-            placeholder="Enter Location..."
+            placeholder='Enter Location...'
             value={this.state.inputLocation}
             onChange={this.changeLocationHandler}
           />

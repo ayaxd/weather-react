@@ -1,6 +1,12 @@
 .search {
-  margin: 20px 0;
-  margin-left: 420px;
+  position: absolute;
+  transform: translateX(50%);
+  right: 50%;
+  bottom: 5%;
+}
+
+.location {
+  color: #fff;
 }
 
 .locationInput {
@@ -9,6 +15,13 @@
   outline: none;
   border-bottom: 1px solid white;
   margin-left: 10px;
-  color: black;
+  color: #fff;
   font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .search {
+    right: 20%;
+    top: 30%;
+  }
 }
