@@ -2,10 +2,10 @@ import React from 'react';
 import styles from './City.module.css';
 import Temperature from '../../../Temperature';
 
-const City = ({ city }) => {
-  const name = city.name;
-  const temperature = parseInt(city.main.temp);
-  const weather = city.weather[0];
+const City = ({ name, temperature, weather }) => {
+  // const name = city.name;
+  // const temperature = parseInt(city.main.temp);
+  // const weather = city.weather[0];
 
   return (
     <div className={styles.city}>

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import styles from './OtherCities.module.css';
 import City from './Components/City';
 import axios from 'axios';
-import getWeather from '../../utils/OpenWeatherMap';
+
 import getWeathers from '../../apis/getWeathers';
 
-const CITIES = [
+export const CITIES = [
   {
     name: 'Sydney',
     id: '2147714',
@@ -59,13 +59,13 @@ class OtherCities extends Component {
             {data.list.map((item) => (
               <City
                 key={item.id}
-                city={item}
-                // name={item.name}
-                // temperature={parseInt(item.main.temp)}
-                // weather={{
-                //   icon: item.weather[0].icon,
-                //   description: item.weather[0].main,
-                // }}
+                // city={item}
+                name={item.name}
+                temperature={parseInt(item.main.temp)}
+                weather={{
+                  icon: item.weather[0].icon,
+                  description: item.weather[0].main,
+                }}
               />
             ))}
           </div>
