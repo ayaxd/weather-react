@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styles from './Search.module.css';
-import getCurrentWeather from '../../apis/getCurrentWeather';
 
 class Search extends Component {
   constructor(props) {

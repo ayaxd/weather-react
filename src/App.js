@@ -4,7 +4,7 @@ import Current from './components/Current';
 import Forecast from './components/Forecast';
 import Search from './components/Search';
 import OtherCities from './components/OtherCities';
-import axios from 'axios';
+
 import getSearchWeather from './apis/getSearchWeather';
 
 class App extends Component {

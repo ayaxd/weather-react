@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styles from './OtherCities.module.css';
 import City from './Components/City';
-import axios from 'axios';
 
 import getWeathers from '../../apis/getWeathers';
 
